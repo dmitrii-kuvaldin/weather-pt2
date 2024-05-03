@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" class="nav-link">current</a>
+      <a href="/cards/index.html" class="nav-link">cards</a>
+      <a href="/select/index.html" class="nav-link">select</a>
+    </header>
+    <main>
+      <div class="container2">
+        <h1>Weather Information</h1>
+        <form id="cityForm">
+          <select id="citySelect">
+            <option value="">Select a city</option>
+            <option value="51.5074,-0.1278,London">London</option>
+            <option value="48.8566,2.3522,Paris">Paris</option>
+            <option value="40.4168,-3.7038,Madrid">Madrid</option>
+            <option value="52.5200,13.4050,Berlin">Berlin</option>
+            <option value="59.3293,18.0686,Stockholm">Stockholm</option>
+            <option value="41.9028,12.4964,Rome">Rome</option>
+          </select>
+          <button type="submit">Get Weather</button>
+        </form>
+        <div class="loader"></div>
+        <p id="weatherInfo"></p>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
